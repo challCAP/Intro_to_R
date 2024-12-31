@@ -195,41 +195,122 @@ x > 2 | x < 4  # TRUE, x is greater than 2, one condition is met, so TRUE
 lst <- list(1,1,2,3,5,8,13,21,44,65)
 
 lst[3] # this gives you the third value in the sequence
-lst[length(lst)]
+lst[length(lst)] # what does this code segment accomplish?
 
-## SWITH TO USING GOOGLE GEMINI ## (WE DO)
+## Elements of a list or vector can also have names. Named lists can be
+#  subset by their names. Dataframes are basically a list of named columns.
+
+named_list <- list("dog" = 1, "cat" = 2, "human" = 3, "cow" = "grass", 'horse' = c('donkey', 5, 'Seabiscuit'))
+
+# These elements can be accessed in the usual way using brackets OR they can be accessed using $, followed by the name. These two statements are equivalent:
+
+named_list[[3]]
+named_list$human
+named_list['human']
+
+# Notice, lists can also contain lists. Let's look into how to call information from a list within a list
+named_list$horse
+named_list[5]
+named_list[[5]]
+
+named_list$horse[1]
+named_list[[5]][1]
+
+## SWITH TO USING GOOGLE GEMINI (WE DO)
+# In this section, I will walk through how I would approach a coding challenge if I encountered a task I didn't yet know how to do
+# I'll demonstrate taking a task, prompting Gemini, and then interpreting the code to complete the task
+
 
 ## TASKS ##
-# What is the last number in this last?
-
-# My Code
-lst[length(lst)]
+## 1)  What is the last number in this list?
 
 # My Prompt:
 # In R, example of how to find the value of the last element in a list
+# My Code
+lst[length(lst)]
 
-# What is the second to last value in the list?
+# Gemini Output
+list_length <- length(lst)
+last_element <- my_list[[lst]]
+print(last_element)
+
+## 2)  What is the second to last value in the list?
+
+## My Prompt:
+# While you could prompt Gemini again, read the output from your last prompt and see if you can figure our how to do this without prompting Gemini
 # My Code
 lst[length(lst)-1]
 
-# Subset the list to find the value of the elements in the first and third position
+## 3) Subset the list to find the value of the elements in the first and third position
+
+# My Prompt:
+# In R, example of how to find the value elements in the first and third position
+#
 # My Code
 lst[c(1,3)]
 
-# Subset the list so the values in the first and third position are omitted
-# My Code
-lst[-c(1,3)]
+# Gemini Output
+first_element <- lst[1]
+third_element <- lst[3]
+print(paste("First element:", first_element))
+print(paste("Third element:", third_element))
 
-# Subset the list to repeat the value in the third position 3 times
+
+## 4) Subset the list so the values in the first and third position are omitted
+# My Code
+lst[-c(1,3)] # Gemini Output same
+
+## 5) Subset the list to repeat the value in the third position 3 times
+# My Code:
 lst[c(3,3,3)]
 
-y_long[c(1, 10, 12:15)]  # get values from positions 1, 10, and 12 to 15
+# Gemini Output
+# Repeat the third element 3 times
+rep(lst[3], 3)
+
+## 6) Subset the list to get values from positions 1, 10, and 12 to 15
+# My Code
+y_long[c(1, 10, 12:15)]  # Gemini same
 
 
-y_long %in% c(9, 16, 121) 
+## Now switch to project-based learning (I DO)
+## For this section, participants will be given a list of task with little guidance, they should use the concepts learned and
+## prompting Gemini to complete the tasks
+## 
 
 
-y_long[y_long %in% c(9, 16, 121)]  # subset the original list using the logical vector created above
+# Run the following code to import our dataset
+install.packages('readr')
+library(readr)
+
+patient_intake_data <- read_csv("Desktop/GitHub/CAP/Intro_to_R/Session 1/patient_intake_data.csv")
+
+# use a code segment to find how many observations are in the dataset?
+nrow(my_data)
+
+# use a code segment to find how many columns are in the dataset?
+length(patient_intake_data)
+
+# As is, use a code segment to find the first city that shows up in the dataset (row 1, column 2)
+patient_intake_data[1,2]
+
+# use a code segment to find the mean income of all observations in the dataset, find the median, and standard deviation
+mean(patient_intake_data$Income)
+median(patient_intake_data$Income)
+sd(patient_intake_data$Income)
 
 
+# use a code segment to find the mean income of only patients from Boston in the dataset, find the median, and standard deviation
+# 
+# Gemini Code:
+# # Subset the data for patients from Boston
+boston_patients <- subset(my_data, City == "Boston")
 
+# Calculate the mean income for Boston patients
+mean_income_boston <- mean(boston_patients$Income)
+
+# Calculate the median income for Boston patients
+median_income_boston <- median(boston_patients$Income)
+
+# Calculate the standard deviation of income for Boston patients
+sd_income_boston <- sd(boston_patients$Income)
