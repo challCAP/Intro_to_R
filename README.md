@@ -2,7 +2,7 @@ Welcome to the Intro to R Repo!
 
 We're excited to be with you on your journey to learning programming in R for data analysis. 
 
-The README.md file in each folder will help you navigate around our workshop's Github repository (or "repo")
+The README.md file in each folder will help you navigate around our workshop's Github repository (or "repo"). Click [here](https://docs.github.com/en/get-started/start-your-journey/hello-world) for more information & tips on how to use Github.
 
 This repo is maintained by:
 Chandler Hall | challCAP | chall@americanprogress.org
