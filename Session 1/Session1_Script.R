@@ -202,34 +202,16 @@ lst[length(lst)]
 ## TASKS ##
 # What is the last number in this last?
 
-# My Code
-lst[length(lst)]
-
-# My Prompt:
-# In R, example of how to find the value of the last element in a list
-
 # What is the second to last value in the list?
-# My Code
-lst[length(lst)-1]
 
 # Subset the list to find the value of the elements in the first and third position
-# My Code
-lst[c(1,3)]
 
 # Subset the list so the values in the first and third position are omitted
-# My Code
-lst[-c(1,3)]
 
 # Subset the list to repeat the value in the third position 3 times
-lst[c(3,3,3)]
 
-y_long[c(1, 10, 12:15)]  # get values from positions 1, 10, and 12 to 15
+# get values from positions 1, 10, and 12 to 15
 
-
-y_long %in% c(9, 16, 121) 
-
-
-y_long[y_long %in% c(9, 16, 121)]  # subset the original list using the logical vector created above
 
 
 
