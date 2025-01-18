@@ -5,6 +5,6 @@ We're excited to be with you on your journey to learning programming in R for da
 The README.md file in each folder will help you navigate around our workshop's Github repository (or "repo"). Click [here](https://docs.github.com/en/get-started/start-your-journey/hello-world) for more information & tips on how to use Github.
 
 This repo is maintained by:
-Chandler Hall | challCAP | chall@americanprogress.org
-&
+Chandler Hall | challCAP | chall@americanprogress.org \n
+& \n
 Jessica Vela | XXXXXX | jvela@americanprogress.org
