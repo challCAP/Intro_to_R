@@ -16,8 +16,8 @@ Confirm you are setup for session 1 by downloading and opening the R script, nam
 
 
 Additional Resources:
-- [LinkedIn Learning] (https://www.linkedin.com/learning/complete-guide-to-r-wrangling-visualizing-and-modeling-data/installing-r?resume=false&u=2459268) - Complete Guide to R: Wrangling, Visualizing, and Modeling Data
+- [LinkedIn Learning](https://www.linkedin.com/learning/complete-guide-to-r-wrangling-visualizing-and-modeling-data/installing-r?resume=false&u=2459268) - Complete Guide to R: Wrangling, Visualizing, and Modeling Data
   - Recommended Videos: R in context, Installing R, Enirvonments for R, Installing RStudio, Navigating the RStuido Environment
-- [Geeks for Geeks] (https://www.geeksforgeeks.org/r-tutorial/?ref=outind)
+- [Geeks for Geeks](https://www.geeksforgeeks.org/r-tutorial/?ref=outind)
   - R-Basics
 - 
