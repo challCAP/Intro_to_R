@@ -8,5 +8,3 @@ The README.md file (which you're reading right now) in each folder will help you
 
 This repo is maintained by: <br />
 Chandler Hall | challCAP | chall@americanprogress.org <br />
-& <br />
-Jessica Vela | XXXXXX | jvela@americanprogress.org
