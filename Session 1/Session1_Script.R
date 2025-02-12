@@ -123,14 +123,19 @@ city <- c("New York", "London", "Paris", "Tokyo")
 df <- data.frame(Name = name, Age = age, City = city)
 
 # Displaying the dataframe
-print(df) 
+print(df)
 
 # Click on the arrow next to 'df' in your environment pane,
 # you can see the column names, the data type of the column, and some data points
 # Now click on df, this should open a tab with your dataframe if you ever want to look at it like a table
 
+# In base R, the '$' sign is used to call a specific vector from a dataframe.
+# So....
+df$name
+# returns only the name column from the dataframe. This will be used a lot as we start to working with dataframes!
 
-# NOTE: there are other recognized objects, but we're going to focus on these for now
+
+###  NOTE: there are other recognized objects, but we're going to focus on these for now #### 
 
 ##############################
 ## Mathematical Operators ###
@@ -199,8 +204,8 @@ lst[length(lst)]
 
 ## SWITH TO USING GOOGLE GEMINI ## (WE DO)
 
-## TASKS ##
-# What is the last number in this last?
+## TASKS ## 
+# What is the last number in this list?
 
 # What is the second to last value in the list?
 
@@ -214,4 +219,23 @@ lst[length(lst)]
 
 
 
+## PROJECT XXX
+## Now we switch to project-based learning (YOU DO)
+## For this section, participants will be given a list of task with little guidance, they should use the concepts learned and prompting Gemini to complete the tasks
+
+# Run the following code to import our dataset
+install.packages('readr')
+library(readr)
+
+patient_intake_data <- read_csv("~/Desktop/GitHub/CAP/Intro_to_R/Session 1/patient_intake_data.csv")
+
+# use a code segment to find how many observations are in the dataset?
+
+# use a code segment to find how many columns are in the dataset?
+
+# As is, use a code segment to find the first city that shows up in the dataset (row 1, column 2)
+
+# use a code segment to find the mean income of all observations in the dataset, find the median, and standard deviation
+
+# use a code segment to find the mean income of only patients from Boston in the dataset, find the median, and standard deviation
 
